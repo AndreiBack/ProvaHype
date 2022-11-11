@@ -145,9 +145,18 @@ flex-direction: row ;
 padding-left: 5vw;
 gap: 2vw;   
 }
+#menu{
+    height: 20px;
+}
 .social{
     padding-left: 45vw;
 }
+    @media (min-width:769px){
+        #menu{
+            display: none;
+            visibility: hidden;
+        }
+    }
 
 @media (max-width:768px){
     .lhead{
@@ -155,10 +164,14 @@ gap: 2vw;
         visibility: hidden;
     }
     .bth{
-        display: none;
+        
         visibility: hidden;
     }
-
+    #menu{
+        display: flex;
+        visibility: visible;
+        
+    }
 }
 @media (max-width:360px){
     .lhead{
@@ -168,6 +181,7 @@ gap: 2vw;
     .bth{
         display: none;
         visibility: hidden;
+        
     }
 
 }
